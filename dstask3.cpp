@@ -1,34 +1,22 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-void func(int a,int b)
+
+void Odd(int i, int n)
 {
-     int x;
-    cin>>x;
-    int arr[x];
-    for(int i=0;i<x ;i++)
+    for(i;i<=n;i++)
     {
-        cin>>arr[i];
-    }
-
-    cout<<endl;
-    for(int j=0;j<x;j++)
-    {
-
-        for(int i=a;i<=b;i++)
+        if(i%2 !=0)
         {
-        if(i%2!=0&& arr[j]==i)
-        cout<<i<<" ";
+            cout<<"The odd number is: "<< i <<endl;
+
         }
     }
 }
 int main()
 {
+    int i,n;
+    cin>>i>>n;
+    Odd(i,n);
 
-
-
-    int a,n;
-    cin>>a>>n;
-
-
-    func(a,n);
 }
+
